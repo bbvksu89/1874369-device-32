@@ -1,6 +1,8 @@
 @font-face {
-    font-family: Raleway, serif;
-    src: url("fonts/ralewey-800.woff2") format("woff2");
+    font-family: "Raleway";
+    src: local("fonts/raleway/raleway-800.woff2"),
+         url("font.woff2") format("woff2"),
+         url("font.woff") format("woff");
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -19,6 +21,9 @@
     font-display: swap;
 }
 
+body {
+    font-family: Raleway, serif;
+}
 .page-header {
     background-color: #FFE17F;
     color: black;
