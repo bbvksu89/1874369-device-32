@@ -152,6 +152,8 @@ body {
 
 .catalog-products {
     display: flex;
+    width: 1160px;
+    
 }
 
 .breadcrumbs {
@@ -161,6 +163,11 @@ body {
 
 .product-card {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-products-filter {
+    width: 400px;
 }
 
 .pagination {
