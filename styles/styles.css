@@ -150,9 +150,13 @@ body {
 
 /* Каталог*/
 
+.main-inner {
+    margin: 0 auto;
+}
 .catalog-products {
     display: flex;
     width: 1160px;
+    margin: 0 auto;
     
 }
 
