@@ -146,6 +146,29 @@ body {
     display: flex;
 }
 
+
+
+/* Каталог*/
+
+.catalog-products {
+    display: flex;
+}
+
+.breadcrumbs {
+    display: flex;
+    padding: 0 30px;
+}
+
+.product-card {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 a.navigation-link-footer {
     color: white;
     text-decoration: none;
