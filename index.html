@@ -16,15 +16,17 @@
               <input type="search"  name="search" required placeholder="Поиск по сайту">
             </form>
           </li>
-          <li class="user-navigation-item">
-            <a href="#" type="button">Войти</a>
-          </li>
-          <li class="user-navigation-item">
-            <a href="#" class="button">Срaвнить</a>
-          </li>
-          <li class="user-navigation-item">
-            <a href="#" class="button">Корзина</a>
-          </li>
+          <div class="navigation-user-menu-right">
+            <li class="user-navigation-item">
+              <a href="#" type="button">Войти</a>
+            </li>
+            <li class="user-navigation-item">
+              <a href="#" class="button">Срaвнить</a>
+            </li>
+            <li class="user-navigation-item">
+              <a href="#" class="button">Корзина</a>
+            </li>
+          </div>
         </ul>
       </nav>
       <nav class="navigation">
@@ -32,15 +34,17 @@
           <li class="navigation-item">
             <a class="navigation-link-header" href="catalog.html"><h3>Каталог товаров</h3></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link-header" href="delivery.html"><h3>Доставка</h3></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-header" href="guarantee.html"><h3>Гарантия</h3></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-header" href="contacts.html"><h3>Контакты</h3></a>
-          </li>
+            <div class="navigation-link-header-right">
+              <li class="navigation-item">
+                <a class="navigation-link-header" href="delivery.html"><h3>Доставка</h3></a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link-header" href="guarantee.html"><h3>Гарантия</h3></a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link-header" href="contacts.html"><h3>Контакты</h3></a>
+              </li>
+           </div>
         </ul>
       </nav>
     </header>
@@ -62,6 +66,7 @@
           <p class="slider-description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
           <button type="button"> Подробнее</button>
           <ol class="slider-pagination">
+            <div class="slider-pagination-items">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button" type="button">
                 <span class="visualy-hidden">1 слайд</span>
@@ -77,6 +82,7 @@
                 <span class="visualy-hidden">3 слайд</span>
               </button>
             </li>
+          </div>
           </ol>
           <p>800 м дальность полета</p>
           <p>50 м радиус поражения</p>
@@ -102,6 +108,7 @@
           
         
         <ol class="slider-pagination">
+          <div class="slider-pagination-items">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
               <span class="visualy-hidden">1 слайд</span>
@@ -117,6 +124,7 @@
               <span class="visualy-hidden">3 слайд</span>
             </button>
           </li>
+        </div>
         </ol>
         <p>48 часов</p>
         <p> Без подзарядки</p>
@@ -140,6 +148,7 @@
         </p>
         <button type="button"> Подробнее</button>
          <ol class="slider-pagination">
+          <div class="slider-pagination-items">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
               <span class="visualy-hidden">1 слайд</span>
@@ -155,6 +164,7 @@
               <span class="visualy-hidden">3 слайд</span>
             </button>
           </li>
+          </div>
         </ol>
         <p>8,5 м Длина палки</p>
         <p>5 кг Вес палки</p>
@@ -192,20 +202,20 @@
       </section>
 
       <section class="services">
-        <div>
+        <div class="services-items">
         <ol>
           <li>
-            <a href="delivery.html">Доставка</a>
+            <a class="services-link" href="delivery.html">Доставка</a>
           </li>
           <li>
-            <a href="guaratees.html">Гарантия</a>
+            <a class="services-link" href="guaratees.html">Гарантия</a>
           </li>
           <li>
-            <a href="credits.html">Кредит</a>
+            <a class="services-link" href="credits.html">Кредит</a>
           </li>
         </ol>
       </div>
-      <div>
+      <div class="services-item">
         <h2>Доставка</h2>
         <span class="delivery">
           <p>Мы с удовольствием доставим ваш товар прямо
@@ -218,20 +228,20 @@
 
 
       <section class="services">
-        <div>
+        <div class="services-items">
           <ol>
             <li>
-              <a href="delivery.html">Доставка</a>
+              <a class="services-link" href="delivery.html">Доставка</a>
             </li>
             <li>
-              <a href="guaratees.html">Гарантия</a>
+              <a class="services-link" href="guaratees.html">Гарантия</a>
             </li>
             <li>
-              <a href="credits.html">Кредит</a>
+              <a class="services-link" href="credits.html">Кредит</a>
             </li>
           </ol>
         </div>
-        <div>
+        <div class="services-item">
       <h2>Гарантия</h2>
         <span class="guarantee">
           <p>Если из-за возгорания купленного у нас товара у вас
@@ -243,20 +253,20 @@
       </section>
 
       <section class="services"> 
-        <div>
+        <div class="services-items">
           <ol>
             <li>
-              <a href="delivery.html">Доставка</a>
+              <a class="services-link" href="delivery.html">Доставка</a>
             </li>
             <li>
-              <a href="guaratees.html">Гарантия</a>
+              <a class="services-link" href="guaratees.html">Гарантия</a>
             </li>
             <li>
-              <a href="credits.html">Кредит</a>
+              <a class="services-link" href="credits.html">Кредит</a>
             </li>
           </ol>
         </div>
-        <div>
+        <div class="services-item">
       <h2>Кредит</h2>
         <span class="credits">
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
@@ -267,52 +277,59 @@
       </section>
 
 
-      
-        <h3>Доставим редкий товар под заказ</h3>
-        <section class="about-company">
-          <div>
-        <h2 class="about-us">О нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
-          <ul class="transport-company">
-            <li>Меловые линии</li>
-            <li>СДИК</li>
-            <li>ТоксБерри</li>
-          </ul>
-          <button type="button"> Подробнее о нас</button>
-        </p>
-      </div>
-       <div>
-        <h2 class="contacts">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. 
-          Заодно, сможете проверить работоспособность покупки. </p>
-          <h4>Интернет-магазин «Девайс»</h4>
-          <address class="contacts-address">
-            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
-          </address>
-
-          <h4>Время работы</h4>
-          <ul>
-            <li>
-              пн—пт: с 10:00 до 22:00
-            </li>
-            <li>
-              сб—вс: с 10:00 до 19:00
-            </li>
-          </ul>
-          <button type="button">Напишите нам</button>
+        <div class="delivery-text">
+          <h3>Доставим редкий товар под заказ</h3>
         </div>
-      </section>
+
+
+          <section class="about-company">
+            <div class="about-us">
+             <div class="contacts-title"><h2>О нас</h2></div>
+               <div class="text-about-company"><p>Огромный выбор гаджетов не оставит равнодушным <br> гика, который есть в каждом из нас. </div></p>
+               <div class="text-about-company"> <p> Мы можем доставить ваш товар в самые отдалённые <br> уголки России транспортными компаниями:</div></p>
+                 <div>
+                   <ul class="transport-company">
+                        <li>Меловые линии</li>
+                        <li>СДИК</li>
+                        <li>ТоксБерри</li>
+                     </ul>
+                  </div>
+               <div><button  class="button-about-us" type="button"> Подробнее о нас</button></div>
+            </div>
+
+
+            <div class="contacts">
+                <div class="contacts-title"><h2>Контакты</h2></div>
+                <div class="text-about-company"> <p>Вы можете забрать товар сами, заехав в наш офис. <br>
+                Заодно, сможете проверить работоспособность покупки. </p></div>
+                <div><h4>Интернет-магазин «Девайс»</h4></div>
+                <div><address class="contacts-address">
+                  <p class="contacts-address-text text-about-company">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                  <a class="contacts-phone text-about-company" href="tel:78128121212">+7 (812) 812-12-12</a>
+                </address></div>
+
+                <div><h4>Время работы</h4></div>
+                 <div class="text-about-company"><ul>
+                  <li>
+                     пн—пт: с 10:00 до 22:00
+                  </li>
+                  <li>
+                     сб—вс: с 10:00 до 19:00
+                 </li>
+                </ul>
+              </div>
+                <div><button type="button">Напишите нам</button></div>
+             </div>
+          </section>
 
 
       <section class="e-mailing-section">
         <div>
-        <h2 class="e-mailing">Подпишитесь на рассылку</h2>
+        <h2 class="e-mailing">Подпишитесь <br> на рассылку</h2>
       </div>
-      <div>
-        <p>Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <div class="e-mailing-text">
+        <p>Еженедельный дайджест с обзорами новинок,<br>
+          длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
         </div>
          
             <input type="text" required placeholder="Ваш e-mail">
@@ -324,10 +341,11 @@
     </main>
 
     <footer class="page-footer">
-      
-      <img src="images/device-logo-yellow.svg" height="36px" width="145px"  alt="Логотип Девайс">
-      <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+     <div>
+      <img class="logo-image-footer" src="images/device-logo-yellow.svg" height="36px" width="145px"  alt="Логотип Девайс">
+      <p class="contacts-address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p></div> 
       <nav class="navigation">
+       <div class="menu-items">
         <ul class="menu">
           <li class="navigation-item">
             <a class="navigation-link-footer" href="delivery.html"><h3>Доставка</h3></a>
@@ -339,27 +357,36 @@
             <a class="navigation-link-footer" href="contacts.html"><h3>Контакты</h3></a>
           </li>
         </ul>
-      <a class="contacts-phone" href="tel:78128121212">Тел.:+7 (812) 812-12-12</a>
-    </nav>
-      <section class="footer-social">
+      </div> 
+      </nav>
+
+
+        <div class="contacts-phone-footer"><a class="contacts-phone-footer" href="tel:78128121212">Тел.:+7 (812) 812-12-12</a></div>
+
+
+        <section class="footer-social">
         <ul class="footer-social-list">
+          <div class="footer-social-group">
+          <div>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
+            <a class="button" href="#">Фейсбук</a>
           </li>
+        </div>
+        <div>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
+            <a class="button" href="#">Инстаграм</a>
           </li>
+        </div>
+        <div>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
+            <a class="button" href="#">Твиттер</a>
           </li>
+        </div>
+      </div>
         </ul>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+     
+        
+        <div><p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p></div>
       </section>
     
     </footer>

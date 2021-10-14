@@ -6,23 +6,29 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header-catalog">
         <a class="navigation-logo" href="index.html">
           <img src="images/device-logo.svg" alt="Логотип Девайс" width="145px" height="36px">
         </a>
-        <nav class="user-menu">
-          <input type="text" required placeholder="Поиск по сайту">
-          <ul class="navigation-user-menu">
+      <nav class="user-menu">
+        <ul class="navigation-user-menu">
+          <li>
+            <form action="" method="GET"> 
+              <input type="search"  name="search" required placeholder="Поиск по сайту">
+            </form>
+          </li>
+          <div class="navigation-user-menu-right">
             <li class="user-navigation-item">
-                <a  class="user-navigation-link" href="#" type="button">Войти</a>
+              <a href="#" type="button">Войти</a>
             </li>
             <li class="user-navigation-item">
-                <a  class="user-navigation-link" href="#" type="button">Срaвнить</a>
+              <a href="#" class="button">Срaвнить</a>
             </li>
             <li class="user-navigation-item">
-                <a  class="user-navigation-link" href="#" type="button">Корзина</a>
+              <a href="#" class="button">Корзина</a>
             </li>
-          </ul>
+          </div>
+        </ul>
         </nav>
           <nav class="navigation">
             <ul class="menu">
@@ -57,7 +63,8 @@
 
           <section class="catalog-products">
             <div class="catalog-products-filter">
-            <h3>Фильтр:</h3>
+             <div>
+              <h3>Фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость</legend>
@@ -74,7 +81,9 @@
                         до <input class="catalog-filter-input" type="number" name="max-price"> 
                       </label>
                   </fieldset>
+                </div>
         
+                <div>
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цвет</legend>
                     <label class="control">
@@ -103,7 +112,9 @@
                         <span class="control-label">Розовый</span>
                       </label>
                   </fieldset>
+                </div>
         
+                <div>
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Bluetooth</legend>
                     <span class="control-label"></span>
@@ -116,8 +127,6 @@
                   <span class="control-label">Есть</span>
                 </label>
               </li>
-
-
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="product-group" value="accessories">
@@ -125,9 +134,12 @@
                 </label>
               </li>
                   </fieldset>
+                </div>
 
+                <div>
                 <button class="button" type="submit">Показать</button>
               </form>
+            </div>
             </div>
             <div>    
               <form class="sorting-type">
@@ -145,29 +157,36 @@
               <div class="product-card">
                 
                 <div class="product-card-link">
-                  <p>Любительская селфи-палка</p>
+                  
                   <img class="product-card-image" src="images/product-1-img.png" alt="Любительская селфи-палка" width="360px" height="380px">
-                <b class="product-card-price"> 500 ₽</b>
+                <div>
+                  <p>Любительская селфи-палка</p>
+                    <b class="product-card-price"> 500 ₽</b>
+              </div>
               </div>
                 
                 <div class="product-card-link">
-                  <p>Профессиональная селфи-палка </p>
                   <img class="product-card-image" src="images/product-2-img.png" alt=" Профессиональная селфи-палка" width="360px" height="380px">
+                  <div>
+                  <p>Профессиональная селфи-палка </p>
                   <b class="product-card-price"> 1 500 ₽</b>
+                </div>
                 </div>
 
                 <div class="product-card-link"> 
-                  <p>Непотопляемая
-                    селфи-палка</p>
-                    <img class="product-card-image" src="images/product-3-img.png" alt="Непотопляемая селфи-палка" width="360px" height="380px">
-                    <b class="product-card-price"> 2 500 ₽</b>
+                  <img class="product-card-image" src="images/product-3-img.png" alt="Непотопляемая селфи-палка" width="360px" height="380px">
+                      <div><p>Непотопляемая <br>
+                      селфи-палка</p>
+                           <b class="product-card-price"> 2 500 ₽</b>
+                      </div>
                   </div>
                   
                  
                   <div class="product-card-link">
-                    <p>Селфи-палка «Следуй за мной»</p>
                     <img class="product-card-image" src="images/product-4-img.png" alt="Селфи-палка «Следуй за мной»" width="360px" height="380px">
+                   <div><p>Селфи-палка «Следуй за мной»</p>
                     <b class="product-card-price"> 4 900 ₽</b>
+                  </div>
                   </div>
               </div>
               <button class="button pagination-show-more" type="button">Загрузить ещё</button>
@@ -202,43 +221,55 @@
           </section>
 
     </main>
-      <footer class="page-footer">
-        <img src="images/device-logo-yellow.svg" alt="Логотип Девайс" width="145px" height="36px">
-        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <nav class="navigation">
-          <ul class="menu">
-            <li class="navigation-item">
-              <a class="navigation-link-footer" href="delivery.html"><h3>Доставка</h3></a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-footer" href="guarantee.html"><h3>Гарантия</h3></a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-footer" href="contacts.html"><h3>Контакты</h3></a>
-            </li>
-          </ul>
-        <a class="contacts-phone" href="tel:78128121212">Тел.:+7 (812) 812-12-12</a>
-      </nav>
-        <section class="footer-social">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-          </ul>
-          <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-        </section>
-      </footer>
+    <footer class="page-footer">
+      <div>
+       <img class="logo-image-footer" src="images/device-logo-yellow.svg" height="36px" width="145px"  alt="Логотип Девайс">
+       <p class="contacts-address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p></div> 
+       <nav class="navigation">
+        <div class="menu-items">
+         <ul class="menu">
+           <li class="navigation-item">
+             <a class="navigation-link-footer" href="delivery.html"><h3>Доставка</h3></a>
+           </li>
+           <li class="navigation-item">
+             <a class="navigation-link-footer" href="guarantee.html"><h3>Гарантия</h3></a>
+           </li>
+           <li class="navigation-item">
+             <a class="navigation-link-footer" href="contacts.html"><h3>Контакты</h3></a>
+           </li>
+         </ul>
+       </div> 
+       </nav>
+ 
+ 
+         <div class="contacts-phone-footer"><a class="contacts-phone-footer" href="tel:78128121212">Тел.:+7 (812) 812-12-12</a></div>
+ 
+ 
+         <section class="footer-social">
+         <ul class="footer-social-list">
+           <div class="footer-social-group">
+           <div>
+           <li class="footer-social-item">
+             <a class="button" href="#">Фейсбук</a>
+           </li>
+         </div>
+         <div>
+           <li class="footer-social-item">
+             <a class="button" href="#">Инстаграм</a>
+           </li>
+         </div>
+         <div>
+           <li class="footer-social-item">
+             <a class="button" href="#">Твиттер</a>
+           </li>
+         </div>
+       </div>
+         </ul>
+      
+         
+         <div><p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p></div>
+       </section>
+     
+     </footer>
   </body>
 </html>
