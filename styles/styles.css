@@ -125,6 +125,11 @@ body {
 }
 .slider {
     display: flex;
+    grid-template-columns: repeat(12,60px);
+    min-height: 506px;
+    grid-template-rows: min-content min-content 40px 103px;
+    column-gap: 40px;
+    row-gap: 25px;
 }
 
 .slider-description-kvadro {
@@ -159,7 +164,7 @@ body {
 }
 
 .slider-description-title {
-    grid-column-start: 1 / -1;
+    grid-column: 1 / -1;
     grid-row: 1 /1 ;
     font-family: Raleway;
     font-style: normal;
