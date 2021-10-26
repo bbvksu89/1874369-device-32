@@ -136,21 +136,21 @@ body {
    display: grid;
    grid-template-columns: 140px 140px 140px 140px ;
    grid-template-rows: 110px 80px 30px 80px;
-   gap: 20px;
+   gap: 40px;
 }
 
 .slider-description-bracelets {
    display: grid;
    grid-template-columns: 140px 140px 140px 140px ;
    grid-template-rows: 110px 80px 30px 80px;
-   gap: 20px;
+   gap: 40px;
 }
 
 .slider-description-monopodes {
    display: grid;
    grid-template-columns: 140px 140px 140px 140px ;
    grid-template-rows: 110px 80px 30px 80px;
-   gap: 20px;
+   gap: 40px;
 }
 
 .slider-description-text {
@@ -161,6 +161,7 @@ body {
     line-height: 30px;
     font-size: 18px;
     font-style: normal;
+    margin-top: 30px;
 }
 
 .slider-description-title {
@@ -277,6 +278,7 @@ body {
     grid-template-rows: 70px 90px 130px 100px 40px;
     padding-bottom: 20px;
     margin-bottom: 50px;
+    column-gap: 40px;
 }
 
 .about-us {
@@ -381,6 +383,10 @@ body {
     margin-top: 30px;
 }
 
+.product-card-price {
+    margin-left: 190px;
+}
+
 .product-card-link {
     margin-right: 40px;
 }
@@ -400,7 +406,19 @@ body {
 .pagination {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.pagination-block {
+    background-color: #EBEBEB;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 770px;
+    margin-left: 75px;
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
 .pagination-show-more {
