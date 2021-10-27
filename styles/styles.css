@@ -383,9 +383,46 @@ body {
     margin-top: 30px;
 }
 
-.product-card-price {
+.product-card-price-1 {
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.selfie-1 {
+    display: flex;
+}
+
+
+.product-card-price-2 {
+    margin-top: 15px;
+    margin-left: 140px;
+}
+
+.selfie-2 {
+    display: flex;
+}
+
+
+.product-card-price-3 {
+    margin-top: 15px;
     margin-left: 190px;
 }
+
+.selfie-3 {
+    display: flex;
+}
+
+
+.product-card-price-4 {
+    margin-top: 15px;
+    margin-left: 250px;
+}
+
+.selfie-4 {
+    display: flex;
+}
+
+
 
 .product-card-link {
     margin-right: 40px;
@@ -422,8 +459,20 @@ body {
 }
 
 .pagination-show-more {
-    margin-left: 400px;
+    border: solid;
+    border-color: #EBEBEB;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: white;
+    width: 770px;
+    margin-left: 75px;
     margin-top: 40px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
 }
 
 /*футер*/
