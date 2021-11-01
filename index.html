@@ -8,12 +8,12 @@
   </head>
   <body>
     <header class="page-header">
-      <img src="images/device-logo.svg" alt="Логотип Девайс" width="145px" height="36px">
+      <img  class="logo-image-header" src="images/device-logo.svg" alt="Логотип Девайс" width="145px" height="36px">
       <nav class="user-menu">
-        <ul class="navigation-user-menu">
+        <ul class="navigation-user-menu"> 
           <li>
             <form action="" method="GET"> 
-              <input type="search"  name="search" required placeholder="Поиск по сайту">
+              <input class="page-header-search-form" type="search"  name="search" required placeholder="Поиск по сайту">
             </form>
           </li>
           <div class="navigation-user-menu-right">
@@ -35,13 +35,13 @@
             <a class="navigation-link-header" href="catalog.html"><h3>Каталог товаров</h3></a>
           </li>
             <div class="navigation-link-header-right">
-              <li class="navigation-item">
+              <li class="navigation-item-right">
                 <a class="navigation-link-header" href="delivery.html"><h3>Доставка</h3></a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item-right">
                 <a class="navigation-link-header" href="guarantee.html"><h3>Гарантия</h3></a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item-right">
                 <a class="navigation-link-header" href="contacts.html"><h3>Контакты</h3></a>
               </li>
            </div>
@@ -50,7 +50,7 @@
     </header>
 
     <main class="main-container">
-      <h1 class="visualy-hidden">Слайдер</h1>
+      <h1 class="visualy-hidden main-page-title">Слайдер</h1>
       <section class="slider">
         <div>
           <button class="slider-button slider-prev" type="button">
@@ -174,27 +174,28 @@
       <section class="categories-section">
         <ol class="categories">
           <li class="categories-item"> 
-            <img  class="categories-item-image" src="images/category-vr.svg" alt="Категория Виртуальной реальности" width="160px" height="160px">
+            
+            <a href="vr.html"><img  class="categories-item-image" src="images/category-vr.svg" alt="Категория Виртуальной реальности" width="160px" height="160px"></a>
             <a  class="categories-item-link" href="vr.html">Виртуальная реальность</a>
           </li>
           <li class="categories-item">
-            <img  class="categories-item-image" src="images/category-monopodes.svg" alt="Категория Моноподы для селфи" width="160px" height="160px">
-            <a   class="categories-item-link" href="monopodes.html">Моноподы для селфи</a>
+            <a   class="categories-item-link" href="monopodes.html"><img  class="categories-item-image" src="images/category-monopodes.svg" alt="Категория Моноподы для селфи" width="160px" height="160px"></a>
+            <a   class="categories-item-link" href="monopodes.html">Моноподы <br> для селфи</a>
           </li>
           <li class="categories-item">
-            <img class="categories-item-image" src="images/category-cameras.svg" alt="Категория Экшн-камеры" width="160px" height="160px">
+            <a   class="categories-item-link" href="cameras.html"><img class="categories-item-image" src="images/category-cameras.svg" alt="Категория Экшн-камеры" width="160px" height="160px"></a>
             <a   class="categories-item-link" href="cameras.html">Экшн-камеры</a>
           </li>
           <li class="categories-item">
-            <img class="categories-item-image" src="images/category-fitness-bracelets.svg" alt="Категория Фитнес-браслеты" width="160px" height="160px">
+            <a  class="categories-item-link" href="fitness-bracelets.html"><img class="categories-item-image" src="images/category-fitness-bracelets.svg" alt="Категория Фитнес-браслеты" width="160px" height="160px"></a>
             <a  class="categories-item-link" href="fitness-bracelets.html">Фитнес-браслеты</a>
           </li>
           <li class="categories-item">
-            <img class="categories-item-image" src="images/category-watches.svg" alt="Категория Умные часы" width="160px" height="160px">
+            <a class="categories-item-link" href="smart-watches.html"><img class="categories-item-image" src="images/category-watches.svg" alt="Категория Умные часы" width="160px" height="160px"></a>
             <a class="categories-item-link" href="smart-watches.html">Умные часы</a>
           </li>
           <li class="categories-item"> 
-            <img class="categories-item-image" src="images/category-kvadrokopters.svg" alt="Категория Квадрокоптеры" width="160px" height="160px">
+            <a class="categories-item-link" href="quadrocopters.html"><img class="categories-item-image" src="images/category-kvadrokopters.svg" alt="Категория Квадрокоптеры" width="160px" height="160px"></a>
             <a class="categories-item-link" href="quadrocopters.html">Квадрокоптеры</a>
           </li>
         </ol>
@@ -203,24 +204,26 @@
       <section class="services">
         <div class="services-items">
         <ol>
-          <li>
+          <li class="services-link-delivery">
             <a class="services-link" href="delivery.html">Доставка</a>
           </li>
-          <li>
+          <li class="services-link-guarantee">
             <a class="services-link" href="guaratees.html">Гарантия</a>
           </li>
-          <li>
+          <li class="services-link-credits">
             <a class="services-link" href="credits.html">Кредит</a>
           </li>
         </ol>
       </div>
       <div class="services-item">
-        <h2>Доставка</h2>
+        <h2 class="delivery-title">Доставка</h2>
         <span class="delivery">
-          <p>Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно! Ведь
+          <p>Мы с удовольствием доставим ваш товар прямо <br>
+            к вашему подъезду совершенно бесплатно! Ведь <br>
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </span>
+      </div>
+      <div class="delivery-image">
         <img src="images/delivery-image.png" alt="Доставка" height="240px" width="260px">
       </div>
       </section>
@@ -229,24 +232,26 @@
       <section class="services">
         <div class="services-items">
           <ol>
-            <li>
+            <li class="services-link-delivery">
               <a class="services-link" href="delivery.html">Доставка</a>
             </li>
-            <li>
+            <li class="services-link-guarantee">
               <a class="services-link" href="guaratees.html">Гарантия</a>
             </li>
-            <li>
+            <li class="services-link-credits">
               <a class="services-link" href="credits.html">Кредит</a>
             </li>
           </ol>
         </div>
         <div class="services-item">
-      <h2>Гарантия</h2>
+      <h2 class="guarantee-title">Гарантия</h2>
         <span class="guarantee">
-          <p>Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
+          <p>Если из-за возгорания купленного у нас товара у вас <br>
+            сгорит дом — не переживайте, мы выдадим вам новый. <br>
             Товар, не дом, конечно же.</p>
         </span>
+        </div>
+        <div class="guarantee-image">
         <img src="images/warranty-immage.png" alt="Гарантия" height="240px" width="260px">
       </div>
       </section>
@@ -254,22 +259,24 @@
       <section class="services"> 
         <div class="services-items">
           <ol>
-            <li>
+            <li class="services-link-delivery">
               <a class="services-link" href="delivery.html">Доставка</a>
             </li>
-            <li>
+            <li class="services-link-guarantee">
               <a class="services-link" href="guaratees.html">Гарантия</a>
             </li>
-            <li>
+            <li class="services-link-credits">
               <a class="services-link" href="credits.html">Кредит</a>
             </li>
           </ol>
         </div>
         <div class="services-item">
-      <h2>Кредит</h2>
+      <h2 class="credits-title">Кредит</h2>
         <span class="credits">
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          <p>Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для банка, разумеется.</p>
         </span>
+      </div>
+      <div class="credits-image">
         <img src="images/credit-image.png" alt="Кредит" height="240px" width="260px">
       </div>
         </section>
@@ -277,7 +284,8 @@
 
 
         <div class="delivery-text">
-          <h3>Доставим редкий товар под заказ</h3>
+          <div><a href="" class="delivery-line"><img src=".../images/delivery-car-icon.svg" alt="" width="125px" height="100px"></a></div>
+          <div><a href="" class="delivery-line"><h3 class="delivery-in-text">Доставим редкий товар под заказ</h3></a></div>
         </div>
 
 
@@ -288,9 +296,9 @@
                <div class="text-about-company"> <p> Мы можем доставить ваш товар в самые отдалённые <br> уголки России транспортными компаниями:</div></p>
                  <div>
                    <ul class="transport-company">
-                        <li>Меловые линии</li>
-                        <li>СДИК</li>
-                        <li>ТоксБерри</li>
+                        <li class="transport-company-1">Меловые линии</li>
+                        <li class="transport-company-2">СДИК</li>
+                        <li class="transport-company-3">ТоксБерри</li>
                      </ul>
                   </div>
                <div><button  class="button-about-us" type="button"> Подробнее о нас</button></div>
@@ -308,7 +316,8 @@
                 </address></div>
 
                 <div><h4>Время работы</h4></div>
-                 <div class="text-about-company"><ul>
+                 <div class="text-about-company">
+                   <ul class="text-list-item">
                   <li>
                      пн—пт: с 10:00 до 22:00
                   </li>
@@ -340,9 +349,9 @@
     </main>
 
     <footer class="page-footer">
-     <div>
+     <div class="logo-adress">
       <img class="logo-image-footer" src="images/device-logo-yellow.svg" height="36px" width="145px"  alt="Логотип Девайс">
-      <p class="contacts-address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p></div> 
+      <p class="footer-contacts-address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p></div> 
       <nav class="navigation">
        <div class="menu-items">
         <ul class="menu">
@@ -367,18 +376,18 @@
         <ul class="footer-social-list">
           <div class="footer-social-group">
           <div>
-          <li class="footer-social-item">
-            <a class="button" href="#">Фейсбук</a>
+          <li class="footer-social-item footer-social-fb">
+            <a class="button visualy-hidden" href="#">Фейсбук</a>
           </li>
         </div>
         <div>
-          <li class="footer-social-item">
-            <a class="button" href="#">Инстаграм</a>
+          <li class="footer-social-item footer-social-inst">
+            <a class="button visualy-hidden" href="#">Инстаграм</a>
           </li>
         </div>
         <div>
-          <li class="footer-social-item">
-            <a class="button" href="#">Твиттер</a>
+          <li class="footer-social-item footer-social-twt">
+            <a class="button visualy-hidden" href="#">Твиттер</a>
           </li>
         </div>
       </div>
